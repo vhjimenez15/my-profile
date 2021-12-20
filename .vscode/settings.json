@@ -1,0 +1,37 @@
+{
+    "python.linting.flake8Enabled": true,
+    "files.exclude": {
+      "**/*.pyc": true,
+      "*.pyc": true
+    },
+    "editor.rulers": [80],
+    "editor.tabSize" : 4,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "editor.formatOnSave": false,
+    "python.linting.pylintArgs": [
+      "--load-plugins",
+      "--disable=C0111",
+      "pylint_django"
+    ],
+    "python.pythonPath": "C:\\Users\\mauri\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    // Configuración de prettier
+    "prettier.enable": true,
+    "prettier.arrowParens":"always",
+    "prettier.bracketSpacing": true,
+    "prettier.endOfLine":"lf",
+    "prettier.htmlWhitespaceSensitivity":"css",
+    "prettier.insertPragma": false,
+    "prettier.jsxBracketSameLine": false,
+    "prettier.jsxSingleQuote": false,
+    "prettier.printWidth": 80,
+    "prettier.proseWrap": "preserve",
+    "prettier.quoteProps": "as-needed",
+    "prettier.requirePragma": false,
+    "prettier.semi": true,
+    "prettier.singleQuote": true,
+    "prettier.tabWidth": 2,
+    "prettier.trailingComma": "es5",
+    "prettier.useTabs": false,
+    "prettier.vueIndentScriptAndStyle": false,
+}
