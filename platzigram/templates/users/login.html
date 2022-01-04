@@ -6,14 +6,13 @@
 
 {% block container %}
 
-    {% if error %}
-        <p class="alert alert-danger">{{ error }}</p>
-    {% endif %}
-    {% if exito %}
-        <p class="alert alert-warnning">{{ error }}</p>
+    {% if from.errors %}
+        <p class="alert alert-danger">
+            Your username and password didn'y match. Please try again.
+        </p>
     {% endif %}
 
-    <form method="POST" action="{% url 'login' %}">
+    <form method="POST" action="{% url 'users:login' %}">
         {% csrf_token %}
         <div class="form-group">
             <input
@@ -38,6 +37,6 @@
         </button>
     </form>
 
-    <p class="mt-4">Don't have an account yet? <a href="{% url 'signup' %}">Register</a></p>
+    <p class="mt-4">Don't have an account yet? <a href="{% url 'users:signup' %}">Register</a></p>
 
 {% endblock %}
