@@ -17,9 +17,9 @@ class ProfileCompletionMilddleware:
                 profile = request.user.profile
                 if not profile.picture or not profile.biography:
                     if request.path not in [
-                        reverse('update_profile'),
-                        reverse('end'),
+                        reverse('users:update_profile'),
+                        reverse('users:logout'),
                     ]:
-                        return redirect('update_profile')
+                        return redirect('users:update_profile')
         response = self.get_response(request)
         return response
